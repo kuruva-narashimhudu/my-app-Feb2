@@ -1,0 +1,64 @@
+
+.Data{
+    height: 500px;
+    width: 400px;
+    background-color: rgb(11, 148, 116);
+    justify-items: center;
+    border-radius: 20px;
+
+}
+.Data h1{
+   color: wheat;
+   
+}
+.Data1{
+    margin-top: 50px;
+    padding: 50px;
+    border: 10px solid #15b081 ;
+    border-radius: 15px;
+    background-color: rgb(155, 152, 157);
+  box-shadow: 5px 5px 5px 5px #9a0808;
+     
+
+}
+#r{
+    margin:5px ;
+    padding: 5px;
+    border: 1px solid #6849b6;
+    border-radius: 5px;
+    background-color: rgb(10, 94, 27);
+    
+
+}
+#a{
+    margin:5px ;
+    padding: 5px;
+    border: 1px solid #c8c6cb;
+    border-radius: 5px;
+    background-color: rgb(245, 12, 195);
+    cursor: pointer;
+}
+#b{
+    margin:5px ;
+    padding: 5px;
+    border: 1px solid #c8c6cb;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(112, 9, 231);
+}
+#c{
+    margin:5px ;
+    padding: 5px;
+    border: 1px solid #c8c6cb;
+    border-radius: 5px;
+    background-color: rgb(8, 252, 220);
+    cursor: pointer;
+}
+#d{
+    margin:5px ;
+    padding: 5px;
+    border: 1px solid #c8c6cb;
+    border-radius: 5px;
+    background-color: rgb(206, 16, 16);
+    cursor: pointer;
+}

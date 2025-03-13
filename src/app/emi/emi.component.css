@@ -1,0 +1,35 @@
+.emi{
+    margin-top: 40px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: blueviolet;
+}
+.emi1{
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(155, 152, 157);
+    border-color: aqua;
+}
+#p{
+background-color:lightcyan;    
+
+}
+#r{
+    background-color:lightcyan;    
+    
+    }
+    #t{
+        background-color: lightcyan;    
+        
+        }
+        #s{
+          background-color: rgb(84, 81, 82);
+         padding-right: 20px;
+         text-decoration: solid;
+         text-decoration: wheat;
+        }

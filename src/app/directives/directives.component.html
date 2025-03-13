@@ -1,0 +1,38 @@
+<div class="Production">
+    <h1>Production</h1>
+    <table border="1">
+        <thead>
+
+               <tr>
+            <th>name</th>
+            <th>Price</th>
+            <th>Rating</th>
+        </tr>
+        </thead> 
+        <tbody>
+        <tr *ngFor="let nara of products">
+            <td>{{ nara.name| lowercase }}</td>
+            <td [ngStyle]="{'color':nara.price<2000?'green':'red'}">{{ nara.price |currency}}</td>
+            
+            <td [ngClass]="{'green':nara.rating>4,'red':nara.rating<2, 'yellow':nara.rating>2&&nara.rating}">{{ nara.rating }}</td>
+        </tr>
+    </tbody>
+    </table>
+       <h1>{{newDate | date:'yyy-MM-dd'}}</h1>
+    <ol>
+        <li *ngFor="let state of states">{{state}}</li>
+
+    </ol>
+    <ul>
+        <li *ngFor="let state of states">{{state}}</li>
+    </ul>
+    <select>
+        <option *ngFor="let state of states">{{state}}</option>
+    </select>
+
+
+    <p *ngIf="!isVisiable">Welcome to Mohith IT</p>
+    <p *ngIf="isVisiable">Thank u four statesisiting</p>
+
+   
+

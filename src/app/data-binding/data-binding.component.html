@@ -1,0 +1,40 @@
+<!-- <h1>Data Banding</h1> -->
+
+<!-- event Binnding -->
+<!-- <button (click)="click()">Click Me</button><br>
+<input type="text" (keyup)="submit()"> -->
+
+<!-- interpolation -->
+ <!-- <h1>Name:{{name}}</h1>
+ <h3>Nge{{age}}</h3> -->
+
+ <!-- Proparty Binding [] -->
+ <!-- <button [disabled]="isdata">submit</button><br> -->
+
+ <!-- two way Data Binding[(ngModel)]
+   -->
+    <!-- <input type="text" [(ngModel)]="mobile" (keyup)="submit()"> -->
+
+    <!-- calculator -->
+     <div class="Data">
+
+     <h1>Calculator</h1><br><br>
+     
+      <hr>
+      <div class="Data1">
+     <label>Number1:</label>
+     <input  id="A" type="number" [(ngModel)]="num1" ><br>
+      <br>
+     <label>Number2:</label>
+     <input id="B"  type="number" [(ngModel)]="num2" ><br>
+     <br>
+     <div id="r">
+     <button id="a" (click)="add()" [disabled]=" !num1 || !num2">Add</button>
+     <button id="b" (click)="sub()" [disabled]=" !num1 || !num2">Sub</button>
+     <button id="c" (click)="mul()" [disabled]=" !num1 || !num2">Mul</button>
+     <button  id="d" (click)="div()" [disabled]=" !num1 || !num2">Div</button><br>
+     
+    </div>
+     <h3>{{result}}</h3>
+      </div>
+    </div>

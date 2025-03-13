@@ -1,0 +1,18 @@
+<div class="Rectanglar">
+    <h1>Circle</h1><br>
+    <hr>
+    <label></label>
+    <input id="r1" type="number" [(ngModel)]="num1"><br>
+     <br>
+    <input id="r2" type="number" [(ngModel)]="num2"><br>
+    <br>
+    <div id="s1">
+    <button id="r3" (click)="add()" [disabled]="!num1 || !num2">Add</button>
+    <br>
+    <button id="r4" (click)="sub()" [disabled]="!num1 || !num2" >perimeter</button>
+    </div>
+    <h1>{{result}}</h1>
+</div>
+
+
+

@@ -1,0 +1,35 @@
+.Rectanglar{
+          width: 300px;
+         height: 300px;
+         background-color: #7f87f0;
+         justify-items: center;
+         position: absolute;
+         left: 50%;
+         top: 30%;
+         justify-content: space-around;
+}
+#r1{
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  
+}
+#r2{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    
+  }
+  #s1{
+    text-justify: auto;
+  }
+  #r3{width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:greenyellow;
+  }
+  #r4{width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:greenyellow;
+  }

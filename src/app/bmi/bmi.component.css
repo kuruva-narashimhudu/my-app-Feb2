@@ -1,0 +1,31 @@
+   
+.bmi{
+
+    width: 120%;
+    height: 70%;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aqua;
+    justify-items: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#b1{ 
+    height: 40px ;
+    width: 200px;
+    border-radius: 10px;
+    background-color: cadetblue;
+    cursor: pointer;
+    right: 50%;
+}
+#weight{
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+}
+#height{
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+}

@@ -1,0 +1,20 @@
+.tempretur{
+    height: 400px;
+    width: 400px;
+    background-image: url(https://images.pexels.com/photos/6560286/pexels-photo-6560286.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 50px;
+
+}
+.tempretur1{
+    margin-top: 50px;
+    padding: 50px;
+    border: 10px solid #0cab49 ;
+    border-radius: 15px;
+    background-color: rgb(155, 152, 157);
+  box-shadow: 5px 5px 5px 5px #2b2a2a;
+}
