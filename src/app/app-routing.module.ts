@@ -18,6 +18,7 @@ import { TestComponentRenderer } from '@angular/core/testing';
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
 
 const routes: Routes = [
   {path:'dashbord',component:DashbordComponent,children:[
@@ -34,6 +35,8 @@ const routes: Routes = [
     {path:'directives',component:DirectivesComponent},
     {path:'employee',component:EmployeeComponent},
     {path:'flipkart',component:FlipkartComponent},
+    {path:'vehicle',component:VehicleComponent}
+
 
   ]},
   

@@ -23,6 +23,8 @@ import { IntrestComponent } from './intrest/intrest.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import {HttpClientModule }from"@angular/common/http"
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,12 +45,14 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
     IntrestComponent,
     DirectivesComponent,
     EmployeeComponent,
-    FlipkartComponent
+    FlipkartComponent,
+    VehicleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-   FormsModule
+   FormsModule,
+   HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

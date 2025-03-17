@@ -1,0 +1,21 @@
+<h1>vehicle</h1>
+<table class="table table-red">
+    <thead>
+        <tr> <th>S No</th>
+            <th>Vehicle</th>
+            <th>Color</th>
+            <th>Cost</th>
+            <th>Fuel</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vehicle of vehicles; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{vehicle.Vehicle}}</td>
+            <td>{{vehicle.color}}</td>
+            <td>{{vehicle.cost}}</td>
+            <td>{{vehicle.fuel}}</td>
+        </tr>
+    </tbody>
+</table>
