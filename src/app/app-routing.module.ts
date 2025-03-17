@@ -17,6 +17,7 @@ import { IntrestComponent } from './intrest/intrest.component';
 import { TestComponentRenderer } from '@angular/core/testing';
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
 
 const routes: Routes = [
   {path:'dashbord',component:DashbordComponent,children:[
@@ -32,6 +33,7 @@ const routes: Routes = [
     {path:'intrest',component:IntrestComponent},
     {path:'directives',component:DirectivesComponent},
     {path:'employee',component:EmployeeComponent},
+    {path:'flipkart',component:FlipkartComponent},
 
   ]},
   

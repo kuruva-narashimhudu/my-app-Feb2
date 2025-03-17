@@ -2,11 +2,12 @@
 <label> Employee Data</label>
 <input type="text" [(ngModel)]="name"><br>
 <label>Employee Experience</label>
-<input type="text" [(ngModel)]="name"><br>
+<input type="text" [(ngModel)]="experience"><br>
 <label>Employee Package</label>
-<input type="text" [(ngModel)]="name"><br>
+<input type="text" [(ngModel)]="package"><br>
 <label>Employee Role</label>
-<input type="text" [(ngModel)]="name"><br>
+<input type="text" [(ngModel)]="role"><br>
+
 
 
 
@@ -20,11 +21,12 @@
 
 <select [(ngModel)]="role" (change)="filter()">
     <option>UIDeveloper</option>
-    <option>Software Develope</option>
-    <option>Data enginee</option>
+    <option>Software Developer</option>
+    <option>Data engineer</option>
     <option>Testing Engineer</option>
 </select>
-<table border="10px"[cellPadding]="50" [cellSpacing]="10">
+<div class="a">
+<table border="10px"[cellPadding]="60" [cellSpacing]="10">
     <thead>
         <tr>
             <th>S No</th>
@@ -45,7 +47,8 @@
            <td>
             <button (click)="dalete(i)">delete</button>
            </td>
-            
+       
 
     </tbody>
 </table>
+</div>

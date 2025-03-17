@@ -28,6 +28,7 @@ export class EmployeeComponent {
   sort(){
     this.employees.sort((a:any,b:any)=>a.package-b.package);
   }
+  
   // fillter
   role:string='';
   filter(){
@@ -57,8 +58,8 @@ package:number=0;
 employee:string='';
 create(){
   let employee={name:this.name,
-    experience:this.experience
-    ,package:this.package,
+    experience:this.experience,
+    package:this.package,
     role:this.role};
     this.employees.unshift(employee);
 }

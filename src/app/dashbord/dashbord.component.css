@@ -16,22 +16,16 @@
     margin: 15px;
 }
 .left  #a{
-    margin: 90px; 
+    margin: 50px; 
 }
 hr{
-    width: 90px;
+    width: 150px;
 }
 .right{
     height: 100%;
     width: 80%;
-background-image: url(https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=600);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    background-color: burlywood;
+   
 }
 #a{
     height: 20px;

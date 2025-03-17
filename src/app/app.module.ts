@@ -22,6 +22,7 @@ import { TemperatureComponent } from './temperature/temperature.component';
 import { IntrestComponent } from './intrest/intrest.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { EmployeeComponent } from './employee/employee.component';
     TemperatureComponent,
     IntrestComponent,
     DirectivesComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    FlipkartComponent
   ],
   imports: [
     BrowserModule,
