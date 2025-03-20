@@ -1,0 +1,63 @@
+<h2>Bank</h2>
+<input type="text" [(ngModel)]="term" (keyup)="fillter()" placeholder="enter the text" ><br>
+
+<select [(ngModel)]="column">
+    <option>account_name</option>
+    <option>account_number</option>
+    <option>available_balance</option>
+    <option>city</option>
+    <option>ifsc_code</option>
+    <option>profie_picture</option>
+</select>
+
+<select [(ngModel)]="order">
+    <option>ass</option>
+    <option>dese</option>
+</select>
+<button (click)="sort()">sub</button>
+<select [(ngModel)]="limit">
+    <option>10</option>
+    <option>20</option>
+    <option>30</option>
+    <option>50</option>
+</select>
+
+<select [(ngModel)]="page">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>5</option>
+</select>
+<button (click)="pagination()" >Pagination</button>
+
+
+<table class="table table-dark table-striped">
+    <thead   >
+        <tr>
+            <th>S No</th>
+            <th>A/c Name</th>
+            <th>A/c Number</th>
+            <th>Curent Balence</th>
+            <th>City</th>
+            <th>A/C ID</th>
+            <th> IFC Code</th>
+            <th>Profie_Picture</th>
+           <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let bank of banks; let i=index">
+            <td>{{i+1 }}</td>
+            <td>{{bank.account_name}}</td>
+            <td>{{bank.account_number}}</td>
+            <td>{{bank.available_balance}}</td>
+            <td>{{bank.city}}</td>
+            <td>{{bank.id}}</td>
+            <td>{{bank.ifsc_code}}</td>
+            <td>{{bank. profie_picture }}</td>
+            <th>
+            <button (click)="delete(bank.id)" >delete</button>
+                </th>
+        </tr>
+    </tbody>
+</table>

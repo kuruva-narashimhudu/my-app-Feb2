@@ -1,0 +1,49 @@
+.perent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: auto;
+}
+#A{
+    width: 200px;
+    height: 400px;
+    background-color: wheat;
+
+}
+.f1{
+    width: 100%;
+    height:60%;
+    justify-content: center;
+    
+}
+.f21{
+    width: 100%;
+    height: 100%;
+  
+}
+.f2{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    color:blueviolet;
+    overflow: auto;
+
+}
+.f3{
+    width: 100%;
+    height: 10%;
+    color: #04ea73;
+}
+.f4{
+    width: 100%;
+    height: 10%;
+    color: rgb(253, 4, 4);
+    text-decoration: double;
+    justify-content: center;
+}

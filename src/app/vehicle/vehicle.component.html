@@ -1,4 +1,40 @@
-<h1>vehicle</h1>
+<div class="top">
+<h1>vehicle</h1><br>
+</div>
+<input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="enter the text" ><br>
+
+<select [(ngModel)]="column">
+    <option>vehicle</option>        
+    <option>cost</option>
+    <option>fuel</option>
+    <option>color</option>
+    
+   
+</select>
+<select [(ngModel)]="order">
+<option>ass</option>
+<option>desc</option>
+</select>
+
+<button (click)="sort()">sort</button>
+
+<select [(ngModel)]="limit">
+    <option>10</option>        
+    <option>20</option>
+    <option>30</option>
+   
+    
+   
+</select>
+<select [(ngModel)]="page">
+    <option>1</option>        
+    <option>2</option>
+    <option>3</option>
+   
+</select>
+<button (click)="pagination()">Pagination</button>
+
+
 <table class="table table-red">
     <thead>
         <tr> <th>S No</th>
@@ -6,6 +42,7 @@
             <th>Color</th>
             <th>Cost</th>
             <th>Fuel</th>
+            <th>Action</th>
            
         </tr>
     </thead>
@@ -16,6 +53,7 @@
             <td>{{vehicle.color}}</td>
             <td>{{vehicle.cost}}</td>
             <td>{{vehicle.fuel}}</td>
+            <td><button (click)="delete(vehicle.id)" class="btn btn-danger">Delete</button></td>
         </tr>
     </tbody>
 </table>

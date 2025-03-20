@@ -10,8 +10,9 @@ import { NaniComponent } from './nani/nani.component';
 import { Error404Component } from './error404/error404.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MyWebsiteComponent } from './my-website/my-website.component';
+import { DataBindingComponent } from './bank/data-binding/data-binding.component';
+import { EmployeeComponent } from './directives/employee/employee.component';
 import { HomeComponent } from './home/home.component';
-import { DataBindingComponent } from './data-binding/data-binding.component';
 import { CalculitorComponent } from './calculitor/calculitor.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
@@ -21,10 +22,14 @@ import { EmiComponent } from './emi/emi.component';
 import { TemperatureComponent } from './temperature/temperature.component';
 import { IntrestComponent } from './intrest/intrest.component';
 import { DirectivesComponent } from './directives/directives.component';
-import { EmployeeComponent } from './employee/employee.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
-import {HttpClientModule }from"@angular/common/http"
+import {HttpClientModule }from"@angular/common/http";
+import { BankComponent } from './bank/bank.component';
+import { FlipkardDitelsComponent } from './flipkard-ditels/flipkard-ditels.component';
+import { MailComponent } from './mail/mail.component';
+import { PinterestComponent } from './pinterest/pinterest.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +40,6 @@ import {HttpClientModule }from"@angular/common/http"
     WelcomeComponent,
     MyWebsiteComponent,
     HomeComponent,
-    DataBindingComponent,
     CalculitorComponent,
     CircleComponent,
     BMIComponent,
@@ -44,15 +48,19 @@ import {HttpClientModule }from"@angular/common/http"
     TemperatureComponent,
     IntrestComponent,
     DirectivesComponent,
-    EmployeeComponent,
     FlipkartComponent,
-    VehicleComponent
+    VehicleComponent,
+    BankComponent,
+    FlipkardDitelsComponent,
+    MailComponent,
+    PinterestComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
    FormsModule,
-   HttpClientModule
+   HttpClientModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent],

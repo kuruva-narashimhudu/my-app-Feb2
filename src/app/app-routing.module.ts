@@ -6,7 +6,6 @@ import { NaniComponent } from './nani/nani.component';
 import { Error404Component } from './error404/error404.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeComponent } from './home/home.component';
-import { DataBindingComponent } from './data-binding/data-binding.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
@@ -16,26 +15,37 @@ import { TemperatureComponent } from './temperature/temperature.component';
 import { IntrestComponent } from './intrest/intrest.component';
 import { TestComponentRenderer } from '@angular/core/testing';
 import { DirectivesComponent } from './directives/directives.component';
-import { EmployeeComponent } from './employee/employee.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
+import { BankComponent } from './bank/bank.component';
+import { FlipkardDitelsComponent } from './flipkard-ditels/flipkard-ditels.component';
+import { FlipkartDitelsService } from './flipkart-ditels.service';
+import { MailComponent } from './mail/mail.component';
+import { EmployeeComponent } from './directives/employee/employee.component';
+import { DataBindingComponent } from './bank/data-binding/data-binding.component';
+import { PinterestComponent } from './pinterest/pinterest.component';
 
 const routes: Routes = [
   {path:'dashbord',component:DashbordComponent,children:[
     {path:'home',component:HomeComponent},
     {path:'welcome',component:WelcomeComponent},
-    {path:'data-binding',component:DataBindingComponent},
     {path:'calculator',component:CalculitorComponent},
     {path:'rectangle',component:RectangleComponent},
     {path:'circle',component:CircleComponent},
     {path:'bmi',component:BMIComponent},
     {path:'emi',component:EmiComponent},
+    {path:'employee',component:EmployeeComponent},
+    {path: 'data-binding',component:DataBindingComponent},
     {path:'temperature',component:TemperatureComponent},
     {path:'intrest',component:IntrestComponent},
     {path:'directives',component:DirectivesComponent},
-    {path:'employee',component:EmployeeComponent},
     {path:'flipkart',component:FlipkartComponent},
-    {path:'vehicle',component:VehicleComponent}
+    {path:'vehicle',component:VehicleComponent},
+    {path :'bank',component:BankComponent},
+    {path :'flipkard',component:FlipkardDitelsComponent},
+    {path : 'mail',component:MailComponent},
+    {path :'pinterest',component:PinterestComponent},
+
 
 
   ]},
