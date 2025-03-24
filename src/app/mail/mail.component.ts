@@ -15,7 +15,7 @@ export class MailComponent {
       this.Mails=data
     },
     (err:any)=>{
-      alert("wrong api")
+      alert("this is error")
     }
    )
     }

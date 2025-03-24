@@ -1,0 +1,22 @@
+.bank{
+    height: 100%;
+    width:100%;
+    background-color:darkcyan ;
+    justify-items: center;
+    align-content: center;
+}
+label{color: black ;
+    font-size: xx-large;
+
+
+    counter-reset: 1000px;
+}
+input{
+    background-color: chocolate;
+    contain: content;
+}
+button{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+}

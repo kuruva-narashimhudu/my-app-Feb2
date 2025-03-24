@@ -1,0 +1,21 @@
+.create{
+    height: 100%;
+    width: 100%;
+    background-color: darkslategrey;
+   justify-items: center;
+   flex-wrap: wrap;
+   color: antiquewhite;
+}
+
+ input{
+  margin-left: 60%;
+    width: 100%;
+ }
+ label{
+    display: block;
+    margin-top: 30%;
+    font-weight: bold;
+ }
+ button{
+    opacity: 0.8;
+ }

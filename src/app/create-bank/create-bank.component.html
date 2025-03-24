@@ -1,0 +1,15 @@
+<div class="bank">
+
+
+<form [formGroup]="bankForm">
+    <label>Accont Name:</label>
+    <input type="text"formControlName="account_name"><br><br>
+    <label>A/C Number:</label>
+    <input type="text"formControlName="account_number"><br><br>
+    <label>Avalabule balance:</label>
+    <input type="text"formControlName="available_balance"><br><br>
+    <label>City:</label>
+    <input type="text"formControlName="city"><br><br>
+    <button id="button" (click)="create()"class="btn btn-inffo">Create</button>
+</form>
+</div>

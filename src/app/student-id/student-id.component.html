@@ -1,0 +1,84 @@
+
+<div class="perent">
+    <div id="perentTop">
+        <input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="enter the text" ><br>
+
+        <select [(ngModel)]="column">
+            <option>Name</option>        
+            <option>Phone No</option>
+            <option>DOB</option>
+            <option></option>
+        </select>
+        
+        <select [(ngModel)]="order">
+        <option>asen</option>
+        <option>desc</option>
+        </select>
+        <button (click)="sort()">Sort</button>
+        
+        <select [(ngModel)]="limit">
+            <option>10</option>
+            <option>20</option>
+            <option>30</option>
+            <option>40</option>
+        </select>
+
+        <select [(ngModel)]="page">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+        <button (click)="pagination()">Pagination</button>
+        <button  routerLink="/dashboard/creat-student-id" class="btn btn-info">Creatt</button>
+
+    </div>
+    <div id="perentBody">
+        <div id="card" *ngFor="let studentId of StudentId">
+            <div class="cardTop" >
+                <div class="logo"> <img src="{{studentId.school_logo}}" alt=""></div>
+                <div class="detels"><h6>{{studentId.school_name}}</h6></div>
+
+            </div>
+
+            <div class="cardBody">
+                <div id="cardBody1">
+                    <div id="f">
+                    <label for="">Name :</label>
+                    <label  >{{studentId.name}}</label><br>
+                    <label>phone No :</label>
+                    <label >{{studentId.phone}}</label><br>
+                    <label>DOB :</label>
+                    <label >{{studentId.dob}}</label><br>
+                    <label>City :</label>
+                    <label >{{studentId.city}}</label><br>
+                    <label>Email :</label>
+                    <label >{{studentId.email}}</label>
+                  </div>
+
+               </div>
+                <div id="cardBody2"><img  src="{{studentId.profile_picture}}"></div>
+        
+            </div>
+
+            <div class="cardButtom">
+                <div id="cordButtomtop" >
+                   <div id="cardButtomtop1">school_name: {{studentId.school_name}}</div>
+                   <div id="cardButtomtop2"> <h6>school_pin:{{studentId.school_pin}}</h6></div>
+                 </div>
+                <div class=" cardButton"> 
+                   <button id="cardButton1">view</button>
+
+                   <button id="cardButton2">edit</button>
+
+                <button  id="cardButton3" (click)="delete(studentId.id)" class="btn btn-danger">delete</button>
+             </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+

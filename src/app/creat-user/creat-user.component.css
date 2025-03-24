@@ -1,0 +1,30 @@
+.user{
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    object-fit: cover;
+    background-image: url("https://media.istockphoto.com/id/471604196/photo/globe-with-travel-photos.jpg?s=2048x2048&w=is&k=20&c=9p-9CBD4Tj245D0qZBMeIpRybBaNKAyZaOuyI216fc8=");
+}
+h1{
+    height: 100%;
+    width: 100%;
+    background-color: chartreuse;
+}
+label{
+    margin-top: 5%;
+    color: crimson;
+
+}
+input{
+    border-radius: 5px;
+    display:list-item;
+    margin-left: 40%
+    
+}
+button{
+    background-color: cornflowerblue;
+    margin-left: 50%;
+    
+}

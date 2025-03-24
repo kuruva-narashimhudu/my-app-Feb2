@@ -17,7 +17,7 @@ export class VehicleComponent {
         this.vehicles=data
       },
       (err:any)=>{
-        alert("wrong api");
+        alert("error it");
       }
     )
   }
@@ -29,7 +29,7 @@ export class VehicleComponent {
         this.vehicles=data;
 
       },(err:any)=>{
-      alert("wrong api");
+      alert("error it");
     }
     )
   }
@@ -42,10 +42,11 @@ export class VehicleComponent {
         console.log(Data);
         this.vehicles=Data;
       },(err:any)=>{
-        alert("wrong api");
+        alert("error thi");
    
       }
     )
+    
   }
   loadVehicles(){
   this._vehicle.getVehicle().subscribe(
@@ -78,7 +79,6 @@ export class VehicleComponent {
   page:any='';
   pagination(){
     this._vehicle.getPaginatedVhicles(this.limit,this.page).subscribe(
-
       (data:any)=>{
         console.log(data);
         this.vehicles=data;

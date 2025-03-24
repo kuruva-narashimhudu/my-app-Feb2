@@ -1,0 +1,14 @@
+
+<form [formGroup]="studentIdForm">
+    <label>Name:</label>
+    <input type="text"formControlName="name"><br>
+    <label>Phone No:</label>
+    <input type="text"formControlName="phone"><br>
+    <label>DOB:</label>
+    <input type="text"formControlName="dob "><br>
+    <label>City</label>
+    <input type="text"formControlName="city"><br>
+    <label>Email</label>
+    <input type="text"formControlName="email"><br>
+    <button (click)="create()"class="btn btn-info">Create </button>
+</form>

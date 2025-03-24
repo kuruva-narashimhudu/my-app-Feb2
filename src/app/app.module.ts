@@ -17,7 +17,7 @@ import { CalculitorComponent } from './calculitor/calculitor.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmiComponent } from './emi/emi.component';
 import { TemperatureComponent } from './temperature/temperature.component';
 import { IntrestComponent } from './intrest/intrest.component';
@@ -29,6 +29,14 @@ import { BankComponent } from './bank/bank.component';
 import { FlipkardDitelsComponent } from './flipkard-ditels/flipkard-ditels.component';
 import { MailComponent } from './mail/mail.component';
 import { PinterestComponent } from './pinterest/pinterest.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateBankComponent } from './create-bank/create-bank.component';
+import { StudentIdComponent } from './student-id/student-id.component';
+import { CreatUserComponent } from './creat-user/creat-user.component';
+import { CreatStudentIdComponent } from './creat-student-id/creat-student-id.component';
+import { WeatherReportComponent } from './weather-report/weather-report.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+
 
 @NgModule({
   declarations: [
@@ -54,12 +62,20 @@ import { PinterestComponent } from './pinterest/pinterest.component';
     FlipkardDitelsComponent,
     MailComponent,
     PinterestComponent,
+    CreateVehicleComponent,
+    CreateBankComponent,
+    StudentIdComponent,
+    CreatUserComponent,
+    CreatStudentIdComponent,
+    WeatherReportComponent,
+    VehicleDetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
    FormsModule,
    HttpClientModule,
+   ReactiveFormsModule
   
   ],
   providers: [],

@@ -8,10 +8,8 @@ import { Observable } from 'rxjs';
 export class VehicleService
  {
 
-  constructor( private _httpClient:HttpClient) 
-  {
-  }
-  getVehicle():Observable<any>{
+  constructor( private _httpClient:HttpClient) {}
+  getVehicle(id?: number):Observable<any>{
     return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction")
       
   }
@@ -28,5 +26,14 @@ export class VehicleService
   getPaginatedVhicles(limit:any,page:any):Observable<any>{
     return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction?limit="+limit+"&page="+page);
   }
+  createVehicle(data:any):Observable<any>{
+    return this._httpClient.post("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction",data)
+  }
+  getVehicleDetails(id:any):Observable<any>{
+    return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction/"+id);
+  }
+  updateVehicle(id:any,data:any):Observable<any>{
+    return this._httpClient.put("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction/"+id,data);
 
+ }
  }

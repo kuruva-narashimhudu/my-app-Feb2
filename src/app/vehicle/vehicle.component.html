@@ -33,6 +33,7 @@
    
 </select>
 <button (click)="pagination()">Pagination</button>
+<button routerLink="/dashboard/create Veehicle" class="btn btn-info">Create</button>
 
 
 <table class="table table-red">
@@ -42,7 +43,7 @@
             <th>Color</th>
             <th>Cost</th>
             <th>Fuel</th>
-            <th>Action</th>
+            <th colspan="3">Action</th>
            
         </tr>
     </thead>
@@ -53,7 +54,15 @@
             <td>{{vehicle.color}}</td>
             <td>{{vehicle.cost}}</td>
             <td>{{vehicle.fuel}}</td>
-            <td><button (click)="delete(vehicle.id)" class="btn btn-danger">Delete</button></td>
+            <td>
+            
+                <button id="View" routerLink="/dashboard/vehicle-details/{{vehicle.id}}" class="btn btn-peimary" >View</button>
+
+            </td>
+            <td>
+                <button id="Edit" routerLink="/dashboard/edit-vehicle/{{vehicle.id}}" class="btn btn-waring">Edit</button>
+            </td>
+                <td><button (click)="delete(vehicle.id)" class="btn btn-danger">Delete</button></td>
         </tr>
     </tbody>
 </table>

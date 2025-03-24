@@ -1,10 +1,11 @@
 <h1>prenter</h1>
 <div class="parent">
 <div id="A" *ngFor="let pinterests of Pinterests">
-    <div class="f1"> <img class="f21"[src]="pinterests.download_url"></div><br>
+    <div class="f1">  <img class="f21"[src]="pinterests.download_url"></div><br>
     <div class="f2">{{ pinterests.author}}</div>
-    <div class="f3">{{ pinterests.height }}</div>
-    <div class="f4">{{ pinterests.id }}</div>
+    <a href="pinterests.url">
+        <button class="btn btn-info">download</button>
+    </a>
     
     
 </div>

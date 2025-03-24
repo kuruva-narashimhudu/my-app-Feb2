@@ -24,9 +24,17 @@ import { MailComponent } from './mail/mail.component';
 import { EmployeeComponent } from './directives/employee/employee.component';
 import { DataBindingComponent } from './bank/data-binding/data-binding.component';
 import { PinterestComponent } from './pinterest/pinterest.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateBankComponent } from './create-bank/create-bank.component';
+import { StudentIdComponent } from './student-id/student-id.component';
+import { CreatUserComponent } from './creat-user/creat-user.component';
+import { CreatStudentIdComponent } from './creat-student-id/creat-student-id.component';
+import { WeatherReportComponent } from './weather-report/weather-report.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+
 
 const routes: Routes = [
-  {path:'dashbord',component:DashbordComponent,children:[
+  {path:'dashboard',component:DashbordComponent,children:[
     {path:'home',component:HomeComponent},
     {path:'welcome',component:WelcomeComponent},
     {path:'calculator',component:CalculitorComponent},
@@ -45,6 +53,15 @@ const routes: Routes = [
     {path :'flipkard',component:FlipkardDitelsComponent},
     {path : 'mail',component:MailComponent},
     {path :'pinterest',component:PinterestComponent},
+    {path : 'create Veehicle',component:CreateVehicleComponent},
+    {path :'create-Bank',component:CreateBankComponent },
+    {path :'student-id',component:StudentIdComponent},
+    {path :'creat-user',component:CreatUserComponent},
+    {path :'creat-student-id',component:CreatStudentIdComponent},
+    {path : 'weather-report',component:WeatherReportComponent},
+    {path : 'vehicle-details/:id',component:VehicleDetailsComponent},
+    {path :'edit-vehicle/:id',component:CreateVehicleComponent}
+
 
 
 

@@ -1,3 +1,11 @@
 .top{
     background-color: aqua;
 }
+#View{
+    color: darkcyan;
+    background-color: crimson;
+}
+#Edit{
+    background-color: cyan;
+    color: antiquewhite;
+}
