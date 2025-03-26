@@ -1,6 +1,10 @@
-<div class="login">
-    <h1>login</h1>
-    <hr>
-    <button id="b1"></button>
-    <h1>creating new account</h1>
-</div>
+
+    <form [formGroup]="loginFrom">
+        <label>Email:</label>
+        <input type="email" formControlName="email"><br>
+        <label>password:</label>
+        <input type="email" formControlName="email"><br>
+        <button class="btn btn-primary" (click)="login()" >login</button>
+
+    </form>
+

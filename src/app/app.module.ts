@@ -36,6 +36,9 @@ import { CreatUserComponent } from './creat-user/creat-user.component';
 import { CreatStudentIdComponent } from './creat-student-id/creat-student-id.component';
 import { WeatherReportComponent } from './weather-report/weather-report.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { StudentIdDetailsComponent } from './student-id-details/student-id-details.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
 
 
 @NgModule({
@@ -69,6 +72,9 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     CreatStudentIdComponent,
     WeatherReportComponent,
     VehicleDetailsComponent,
+    StudentIdDetailsComponent,
+    Sibling1Component,
+    Sibling2Component,
   ],
   imports: [
     BrowserModule,

@@ -31,10 +31,12 @@ import { CreatUserComponent } from './creat-user/creat-user.component';
 import { CreatStudentIdComponent } from './creat-student-id/creat-student-id.component';
 import { WeatherReportComponent } from './weather-report/weather-report.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { AurthenticationGuard } from './aurthentication.guard';
+import { StudentIdDetailsComponent } from './student-id-details/student-id-details.component';
 
 
 const routes: Routes = [
-  {path:'dashboard',component:DashbordComponent,children:[
+  {path:'dashboard',component:DashbordComponent,canActivate:[AurthenticationGuard] ,children:[
     {path:'home',component:HomeComponent},
     {path:'welcome',component:WelcomeComponent},
     {path:'calculator',component:CalculitorComponent},
@@ -60,11 +62,8 @@ const routes: Routes = [
     {path :'creat-student-id',component:CreatStudentIdComponent},
     {path : 'weather-report',component:WeatherReportComponent},
     {path : 'vehicle-details/:id',component:VehicleDetailsComponent},
-    {path :'edit-vehicle/:id',component:CreateVehicleComponent}
-
-
-
-
+    {path :'edit-vehicle/:id',component:CreateVehicleComponent},
+    {path :'studentId-details/:id',component:StudentIdDetailsComponent}
   ]},
   
   {path:'home',component:HomeComponent},

@@ -2,16 +2,11 @@
     height: 100%;
     width: 100%;
     background-color: rgb(23, 136, 98);
-    display: flex;
-    justify-content: center;
-
+justify-items: center;
 }
 #color{
     height: 100px;
     width: 100px;
     background-color: yellow;
     border-radius: 50px;
-}
-input{
-    /* opacity: 0; */
 }

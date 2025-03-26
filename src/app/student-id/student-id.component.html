@@ -3,8 +3,8 @@
     <div id="perentTop">
         <input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="enter the text" ><br>
 
-        <select [(ngModel)]="column">
-            <option>Name</option>        
+        <select [(ngModel)]="id">
+            <option>name</option>        
             <option>Phone No</option>
             <option>DOB</option>
             <option></option>
@@ -54,9 +54,8 @@
                     <label >{{studentId.city}}</label><br>
                     <label>Email :</label>
                     <label >{{studentId.email}}</label>
-                  </div>
-
-               </div>
+                 </div>
+                 </div>
                 <div id="cardBody2"><img  src="{{studentId.profile_picture}}"></div>
         
             </div>
@@ -66,19 +65,17 @@
                    <div id="cardButtomtop1">school_name: {{studentId.school_name}}</div>
                    <div id="cardButtomtop2"> <h6>school_pin:{{studentId.school_pin}}</h6></div>
                  </div>
-                <div class=" cardButton"> 
-                   <button id="cardButton1">view</button>
-
+                <div class="cardButton"> 
+                   <button id="cardButton1" routerLink="/dashboard/studentId-details/{{studentId.id}}" class="btn btn-danger">view</button>
                    <button id="cardButton2">edit</button>
-
-                <button  id="cardButton3" (click)="delete(studentId.id)" class="btn btn-danger">delete</button>
-             </div>
+                   <button  id="cardButton3" (click)="delete(studentId.id)" class="btn btn-danger">delete</button>
+                </div>
             </div>
 
         </div>
 
-    </div>
+      </div>
 
-</div>
+ </div>
 
 

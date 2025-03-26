@@ -32,14 +32,15 @@ export class StudentIdComponent {
       }
       )
     }
-    column:any='';
+    id:any='';
     order:any='';
     
   sort(){
-    this._studentId.getSortedStudentId(this.column,this.order).subscribe(
+    this._studentId.getSortedStudentId(this.id,this.order).subscribe(
       (Data:any)=>{
         console.log(Data);
         this.StudentId=Data;
+        
       },(err:any)=>{
         alert("error this");
    

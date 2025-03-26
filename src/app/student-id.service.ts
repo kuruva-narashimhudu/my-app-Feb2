@@ -14,11 +14,11 @@ export class StudentIdService {
 getfillteredStudentId(term:any,):Observable<any>{
   return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student?filter="+term)
 }
-getSortedStudentId(column:any,order:any):Observable<any>{
-  return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student?sortBy="+column+"&oder="+order)
+getSortedStudentId(id:any,order:any):Observable<any>{
+  return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student?sortBy="+id+"&order="+order)
 }
 getpaginationStudentId(limit:any,page:any):Observable<any>{
-  return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student?limit+"+limit+"&page="+page)
+  return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student?limit="+limit+"&page="+page)
 
 }
 createStudentId(data:any):Observable<any>{
@@ -29,5 +29,9 @@ deleteStudentId(id:any):Observable<any>{
   return this._httpClient.delete("https://6128991386a213001729f9df.mockapi.io/test/v1/student/"+id)
 
 }
+getStudentIds(id:any):Observable<any>{
+  return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student/"+id)
 
+
+}
 }

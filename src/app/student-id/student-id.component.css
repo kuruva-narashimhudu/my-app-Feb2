@@ -1,7 +1,6 @@
 .perent{
     height: 100%;
     width: 100%;
-    background-color: aqua;
 }
 #perentTop{
     height:10%;
@@ -156,5 +155,5 @@ label{
     border-radius: 5px;}
 
 button{
-    color: aqua;
+    color:lightseagreen;
 }
