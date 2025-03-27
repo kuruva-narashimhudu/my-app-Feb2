@@ -3,9 +3,10 @@
     <div id="A" *ngFor="let flipkardDitel of FlipkardDitels">
         <label class="f1"> <img class="f21"[src]="flipkardDitel.image"></label><br>
         <label class="f2">{{flipkardDitel.title}}</label>
-        <label class="f3">{{flipkardDitel. category }}</label>
-        <div class="f4"> ${{flipkardDitel .price}}<div>
-        
-
+        <label class="f3">{{flipkardDitel.category }}</label>
+        <div class="f4"> ${{flipkardDitel.price}}<div>
+        <div class="rating" >
+            <app-flipkart-rating [rating]="flipkardDitel.rating?.rate"></app-flipkart-rating>
+        </div>
     </div>
 </div>

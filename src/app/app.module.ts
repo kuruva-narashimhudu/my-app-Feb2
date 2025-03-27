@@ -39,6 +39,10 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 import { StudentIdDetailsComponent } from './student-id-details/student-id-details.component';
 import { Sibling1Component } from './sibling1/sibling1.component';
 import { Sibling2Component } from './sibling2/sibling2.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingComponent } from './rating/rating.component';
+import { FlipkartRatingComponent } from './flipkart-rating/flipkart-rating.component';
 
 
 @NgModule({
@@ -75,6 +79,10 @@ import { Sibling2Component } from './sibling2/sibling2.component';
     StudentIdDetailsComponent,
     Sibling1Component,
     Sibling2Component,
+    ParentComponent,
+    ChildComponent,
+    RatingComponent,
+    FlipkartRatingComponent,
   ],
   imports: [
     BrowserModule,

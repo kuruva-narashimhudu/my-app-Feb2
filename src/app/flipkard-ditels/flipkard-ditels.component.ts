@@ -9,6 +9,7 @@ import { FlipkartDitelsService } from '../flipkart-ditels.service';
 })
 export class FlipkardDitelsComponent {
   FlipkardDitels:any=[]
+rating: any;
     constructor(private _flipkart: FlipkartDitelsService)
     {
       _flipkart.getFlipkartDitels().subscribe(
