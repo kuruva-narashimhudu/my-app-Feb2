@@ -35,6 +35,7 @@ import { AurthenticationGuard } from './aurthentication.guard';
 import { StudentIdDetailsComponent } from './student-id-details/student-id-details.component';
 import { Sibling1Component } from './sibling1/sibling1.component';
 import { ParentComponent } from './parent/parent.component';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 
 
 const routes: Routes = [
@@ -67,7 +68,8 @@ const routes: Routes = [
     {path :'edit-vehicle/:id',component:CreateVehicleComponent},
     {path :'studentId-details/:id',component:StudentIdDetailsComponent},
     {path : 'sibling',component:Sibling1Component},
-    {path : 'parent',component:ParentComponent}  
+    {path : 'parent',component:ParentComponent}  ,
+    {path :' life-cycle-hooks',component:LifeCycleHooksComponent}
   ]},
   
   {path:'home',component:HomeComponent},

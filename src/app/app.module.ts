@@ -43,6 +43,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { RatingComponent } from './rating/rating.component';
 import { FlipkartRatingComponent } from './flipkart-rating/flipkart-rating.component';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 
 
 @NgModule({
@@ -83,6 +84,7 @@ import { FlipkartRatingComponent } from './flipkart-rating/flipkart-rating.compo
     ChildComponent,
     RatingComponent,
     FlipkartRatingComponent,
+    LifeCycleHooksComponent,
   ],
   imports: [
     BrowserModule,
